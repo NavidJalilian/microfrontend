@@ -15,6 +15,7 @@ module.exports = {
       exposes: {
         ["./" + exposedCartName]: "./src/index",
       },
+      shared: ["faker"],
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
